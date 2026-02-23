@@ -1,7 +1,3 @@
-//
-// Created by ASUS on 2/1/2026.
-//
-
 #include "tree.h"
 #include <stdio.h>
 #include <stdlib.h>

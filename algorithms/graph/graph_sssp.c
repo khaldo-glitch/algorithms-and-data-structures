@@ -1,4 +1,6 @@
 #include <limits.h>
+#include <stdlib.h>
+#include <stdio.h>
 #include "graph_algorithms.h"
 
 int minGray(BFSResult* res, int colors [] ,int n) {
@@ -35,7 +37,7 @@ static void dijkstra_visit(graph_t* g, int source, int* color, BFSResult* res) {
             int v = e->dest;
             int w = e->weight;
 
-            if (res->dist[v] > res->dist[u] + w) {
+            if (res->dist[u] != INT_MAX && res->dist[v] > res->dist[u] + w) {
                 if (color[v] == WHITE)
                     color[v] = GRAY;
 

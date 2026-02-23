@@ -1,7 +1,3 @@
-//
-// Created by ASUS on 2/1/2026.
-//
-
 #ifndef ADS_BASICS_SORTING_H
 #define ADS_BASICS_SORTING_H
 

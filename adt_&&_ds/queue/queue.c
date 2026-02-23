@@ -1,7 +1,3 @@
-//
-// Created by ASUS on 2/1/2026.
-//
-
 #include "queue.h"
 
 #include <limits.h> // For INT_MIN

@@ -1,6 +1,3 @@
-//
-// Created by ASUS on 2/1/2026.
-//
 #include <stdio.h>
 #include "slist.h"
 #include <stdlib.h>

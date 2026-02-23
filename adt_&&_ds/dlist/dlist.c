@@ -1,7 +1,3 @@
-//
-// Created by ASUS on 2/1/2026.
-//
-
 #include <stdio.h>
 #include "dlist.h"
 #include <stdlib.h>

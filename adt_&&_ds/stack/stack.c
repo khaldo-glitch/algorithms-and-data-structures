@@ -1,6 +1,3 @@
-//
-// Created by ASUS on 2/1/2026.
-//
 #include "stack.h"
 
 #include <limits.h> // For INT_MIN

@@ -1,7 +1,3 @@
-//
-// Created by ASUS on 2/1/2026.
-//
-
 #include <stdio.h>
 #include "clist.h"
 #include <stdlib.h>
@@ -19,17 +15,15 @@ clist* clist_create() {
 }
 
 void clist_destroy(clist* l) {
-    if (l == NULL) return;
+    if (l == NULL || l->head == NULL) return;
 
-    if (l->head != NULL) {
-        cnode_t* node = l->head;
-        // Break the circle to allow standard traversal destruction
-        // or just iterate using size/do-while
-        do {
-            cnode_t* next = node->next;
-            free(node);
-            node = next;
-        } while (node != l->head);
+    cnode_t* node = l->head;
+    l->tail->next = NULL; // Break the cycle to prevent infinite loop
+
+    while(node != NULL) {
+        cnode_t* next = node->next;
+        free(node);
+        node = next;
     }
 
     l->head = NULL;

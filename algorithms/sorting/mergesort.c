@@ -43,7 +43,7 @@ void merge(int arr[], int left, int mid, int right) {
 
 void merge_sort(int arr[], int left, int right) {
     if (left < right) {
-        int mid = (left + right) / 2;
+        int mid = left + (right - left) / 2;
 
         merge_sort(arr, left, mid);
         merge_sort(arr, mid + 1, right);
